@@ -42,6 +42,22 @@ classDiagram
         +showMenu() void
         +showProgress() void
     }
+    class CourseAssignmentTracking{
+        -string assignment
+        -int dueDate
+        +CourseAssignmentTracking()
+    }
+    class TargetGradeCalculator{
+        -string className
+        -int recentGrade
+        -int everypartPercent
+        -int goalGrade 
+        +TargetGradeCalculator()
+    }
+    class todolist{
+        -string taskname
+        
+        
 
     Course "1" *-- "0..*" Task
     TaskManager "1" *-- "0..*" Course
