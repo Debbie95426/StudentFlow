@@ -44,8 +44,10 @@ classDiagram
     }
     class CourseAssignmentTracking{
         -string assignment
-        -int dueDate
+        -string dueDate
         +CourseAssignmentTracking()
+        +today()
+        
     }
     class TargetGradeCalculator{
         -string className
@@ -53,9 +55,20 @@ classDiagram
         -int everypartPercent
         -int goalGrade 
         +TargetGradeCalculator()
+        +countGpa()
     }
     class todolist{
         -string taskname
+        -sring dueDate
+        -bool completed
+        +todolist()
+        +task()
+        +setduedate()
+        +complete()
+    }
+
+        
+        
         
         
 
